@@ -70,7 +70,7 @@ def authenticate_user_for_calender():
 
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                r'D:\UDEMY\GenAI\Langchain\AI Agent Hackathon\calendar_credentials.json',
+                'calendar_credentials.json',
                 scopes=SCOPES
             )
             creds = flow.run_local_server(port=0)
@@ -95,7 +95,7 @@ def authenticate_user_for_gmail():
 
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                r'D:\UDEMY\GenAI\Langchain\AI Agent Hackathon\gmail_credentials.json',
+                'gmail_credentials.json',
                 scopes=["https://www.googleapis.com/auth/gmail.send","https://www.googleapis.com/auth/gmail.modify"]
             )
             creds = flow.run_local_server(port=0)
