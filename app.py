@@ -25,10 +25,6 @@ class Node_Selector(BaseModel):
 
 structured_llm = llm.with_structured_output(Node_Selector)
 
-# r = structured_llm.invoke('remove the labels')
-# print(r)
-
-
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Repetative MultiTask Agent", page_icon="🤖", layout="wide")
 
